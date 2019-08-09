@@ -101,6 +101,28 @@
             <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.9</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.23</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/com.sun/tools -->
         <!--<dependency>
             <groupId>com.sun</groupId>

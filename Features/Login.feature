@@ -6,9 +6,12 @@ Feature: Login
     #Then I verify that the logo present on page
     #And Close browser
 
-  Scenario: Successful Login with Valid Credentials
+  Background: Below are the common steps for every scenarios
     Given User Launch the Chrome Browser
     When User Open URL "http://admin-demo.nopcommerce.com/login"
+
+  @Sanity
+  Scenario: Successful Login with Valid Credentials
     And User enter email as "admin@yourstore.com" and password as "admin"
     And Click on Login Button
     Then Page Title should be "Dashboard / nopCommerce administration"
@@ -16,9 +19,8 @@ Feature: Login
     Then Page Title should be "Your store. Login"
     And Close Browser
 
+  @Regression
   Scenario Outline: Login with Data Driven Technique
-    Given User Launch the Chrome Browser
-    When User Open URL "http://admin-demo.nopcommerce.com/login"
     And User enter email as "<email>" and password as "<password>"
     And Click on Login Button
     Then Page Title should be "Dashboard / nopCommerce administration"

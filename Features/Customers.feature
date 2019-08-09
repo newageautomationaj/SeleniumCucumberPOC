@@ -8,6 +8,7 @@ Feature: Customers
     When User click on Customers Menu
     And Click on Customers Menu Item
 
+  @Sanity
   Scenario: Add New Customer
     And Click on Add New Button
     Then User can view Add New Customer Page
@@ -16,12 +17,14 @@ Feature: Customers
     Then User can view Confirmation Message "The new customer has been added successfully."
     And Close Browser
 
+  @Regression @Sanity
   Scenario: Search Customer by EmailID
     And Enter Customer EmailID
     When Click on Search Button
     Then User should found Email in the Search Table
     And Close Browser
 
+  @Regression
   Scenario: Search Customer by Name
     And Enter Customer FirstName
     And Enter Customer LastName
